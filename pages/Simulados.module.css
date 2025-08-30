@@ -1,0 +1,6 @@
+.todo {
+    height: 100vh;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+}

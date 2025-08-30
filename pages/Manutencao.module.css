@@ -1,0 +1,49 @@
+header, .mainMan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+header{
+    height: 20vh;
+    padding-top: 35px;
+}
+img{
+    width: 400px;
+}
+.mainMan{
+    height: 60vh;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+}
+.giras{
+    font-size: 2em;
+    animation: rodar 1s ease-in-out infinite;
+    animation-timing-function: linear;
+}
+@keyframes rodar{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+@media(max-width:700px){
+    main{
+        font-size: 1.5em;
+    }
+    img{
+        width: 400px;
+    }
+}
+@media(max-width:400px){
+    main{
+        font-size: 1em;
+    }
+    img{
+        width: 200px;
+    }
+}

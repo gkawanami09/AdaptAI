@@ -1,0 +1,7 @@
+.mainDash{
+    display: flex;
+    height: 100vh;
+}
+@media(max-width: 1050px){
+
+}

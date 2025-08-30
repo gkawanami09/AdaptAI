@@ -1,0 +1,99 @@
+.todo {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+}
+.todo2 {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+}
+.finalEntregar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.finalEntregar p{
+    font-size: 2em;
+}
+.finalBtn{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+.tbut{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.btnFinal{
+    background-color: var(--verde);
+    border: 1px solid var(--verde);
+    color: var(--font-log-btn);
+    padding:5px ;
+    border-radius: 10px;
+    width: 80px;
+}
+.controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 80px);
+    padding-bottom: 10px;
+}
+
+.entregar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pressed {
+    z-index: 1;
+}
+
+.norml{
+    z-index: 1;
+}
+
+.correto {
+    background-color: var(--verde);
+    color: var(--font-log-btn);
+}
+
+.errado {
+    background-color: var(--sair-cor);
+    color: var(--font-log-btn);
+}
+
+.corretoBranco {
+    background-color: #ffe433;
+    color: var(--font-log-btn);
+}
+.btns button{
+    background-color: var(--verde);
+    border: 1px solid var(--verde);
+    color: var(--font-log-btn);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80px;
+}
+.infos p{
+    margin-right: 10px;
+    font-size: 17px;
+}

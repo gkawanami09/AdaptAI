@@ -1,0 +1,260 @@
+.todo {
+    display: flex;
+}
+
+.sideBack {
+    background-color: #06D6A0;
+    background-image: url("/public/img/fundoAdaptLogin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 65vw;
+}
+
+.register {
+    height: 100vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    overflow-y: hidden;
+}
+
+.logo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 25vw;
+}
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.waves {
+    height: 30vh;
+    width: 100%;
+    background-image: url("/public/img/ondasLogin.svg");
+    background-repeat: no-repeat;
+}
+
+.charge {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.baixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--charge-Fundo);
+    -webkit-filter: blur(var(--blur-fundo));
+    z-index: 0;
+}
+
+.alinhar {
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 80px;
+    height: 80px;
+    display: grid;
+    border: 4.5px solid #0000;
+    border-radius: 50%;
+    border-color: #dbdcef #0000;
+    animation: spinner-e04l1k 1s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2.2px;
+    border: inherit;
+    border-radius: 50%;
+}
+
+.spinner::before {
+    border-color: var(--verde) #0000;
+    animation: inherit;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+}
+
+.spinner::after {
+    margin: 8.9px;
+}
+
+@keyframes spinner-e04l1k {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.redic {
+    text-decoration: none;
+    color: var(--font-black);
+}
+
+.status {
+    position: absolute;
+    bottom: 35%;
+    color: var(--status-cor);
+    font-size: 20px;
+}
+
+/*confirma email*/
+.confirmaEmail {
+    z-index: 1;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+    width: 35vw;
+    height: 35vh;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--font-log-btn);
+    border-radius: 25px;
+    box-shadow: 8px 9px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--charge-Fundo);
+    -webkit-filter: blur(var(--blur-fundo));
+    z-index: 0;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.btnX {
+    width: 130px;
+    height: 40px;
+
+    border: none;
+    border-radius: 10px;
+    background: var(--sair-cor);
+
+    color: var(--font-log-btn);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-top: 10px;
+}
+
+.btnX:hover {
+    color: var(--sair-cor);
+    background-color: var(--font-log-btn);
+    border: 1px solid var(--sair-cor);
+}
+
+.redic {
+    text-decoration: none;
+    color: var(--font-black);
+}
+
+.stats {
+    position: absolute;
+    color: var(--status-cor);
+    font-size: 20px;
+    bottom: 7%;
+}
+
+@media(max-width: 1131px) {
+    .logo {
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1000px){
+    .confirmaEmail {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 793px) {
+    .sideBack {
+        display: none;
+    }
+
+    .todo {
+        justify-content: center;
+        background-image: url("/public/img/fundoAdaptLogin.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .register {
+        background-color: var(--font-log-btn);
+        width: 320px;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+}
+
+@media (max-height: 900px) {
+    .status {
+        position: absolute;
+        bottom: 25%;
+        color: var(--status-cor);
+        font-size: 17px;
+    }
+}

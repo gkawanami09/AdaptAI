@@ -1,0 +1,116 @@
+.todo {
+    position: relative;
+    background-image: url("/public/img/fundoAdaptLogin.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.disp {
+    z-index: 1;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+    width: 35vw;
+    height: 35vh;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--font-log-btn);
+    border-radius: 25px;
+    box-shadow: 8px 9px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.status {
+    position: absolute;
+    bottom: 7%;
+    color: var(--status-cor);
+    font-size: 20px;
+}
+
+.charge {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.baixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--charge-Fundo);
+    -webkit-filter: blur(var(--blur-fundo));
+    z-index: 0;
+}
+
+.alinhar {
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 80px;
+    height: 80px;
+    display: grid;
+    border: 4.5px solid #0000;
+    border-radius: 50%;
+    border-color: #dbdcef #0000;
+    animation: spinner-e04l1k 1s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2.2px;
+    border: inherit;
+    border-radius: 50%;
+}
+
+.spinner::before {
+    border-color: var(--verde) #0000;
+    animation: inherit;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+}
+
+.spinner::after {
+    margin: 8.9px;
+}
+
+@keyframes spinner-e04l1k {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+@media(max-width: 800px) {
+    .disp {
+        width: 320px;
+        height: 320px;
+    }
+}
