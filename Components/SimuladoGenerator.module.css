@@ -1,0 +1,145 @@
+.todo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    transition: 0.1s;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20vh;
+}
+
+.title {
+    width: 100%;
+    height: 10vh;
+
+    font-size: 3rem;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0 30px;
+
+    margin-top: 20px;
+
+    display: flex;
+    gap: 50px;
+}
+
+.folha {
+    width: 80vw;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 5px 4px 17.8px 3px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.textarea img {
+    max-width: 100%;
+    min-width: 20%;
+}
+
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume{
+    width: 80vw;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.textarea {
+    padding: 15px 20px;
+}
+
+.alternativa {
+    display: flex;
+    gap: 30px;
+    width: 80vw;
+    border: 2px solid var(--font-log-btn);
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.25);
+
+    margin-top: 20px;
+}
+
+.alternativa:default {
+    background-color: black;
+    padding: 100px 100px;
+}
+
+.pressed {
+    border: 2px solid var(--verde);
+}
+
+.sendR {
+    margin-top: 30px;
+
+    background-color: var(--verde);
+    border: 1px solid var(--verde);
+    color: var(--font-log-btn);
+    padding: 7px 15px;
+    border-radius: 10px;
+
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.res {
+    margin-top: 30px;
+    margin-bottom: 20vh;
+    width: 80vw;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.correto {
+    background-color: var(--verde);
+    color: var(--font-log-btn);
+}
+
+.errado {
+    background-color: var(--sair-cor);
+    color: var(--font-log-btn);
+}
+
+.corretoBranco {
+    background-color: yellow;
+    color: var(--font-log-btn);
+}
+
+.txtR {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--verde);
+}
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+}

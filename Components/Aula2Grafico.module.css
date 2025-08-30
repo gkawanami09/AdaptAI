@@ -1,0 +1,28 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60vh;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    flex-direction: column;
+}
+
+.card h1{
+    display: flex;
+    justify-content: left;
+    padding-left: 15px;
+}
+
+.grafico{
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

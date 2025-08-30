@@ -1,0 +1,19 @@
+.todo {
+    width: 30%;
+    height: 60px;
+
+    background-color: var(--verde);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+}
+
+.txt {
+    color: var(--font-log-btn);
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 25px;
+    padding: 0 20px;
+    font-weight: 700;
+}

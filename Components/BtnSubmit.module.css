@@ -1,0 +1,21 @@
+.btn {
+    width: 130px;
+    height: 40px;
+
+    border: none;
+    border-radius: 10px;
+    background: var(--verde);
+
+    color: var(--font-log-btn);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.btn:hover {
+    border: var(--verde) solid 1px;
+    background-color: var(--font-log-btn);
+    color: var(--verde);
+    cursor: pointer;
+}

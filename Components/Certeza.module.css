@@ -1,0 +1,58 @@
+.charge {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.baixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--charge-Fundo);
+    -webkit-filter: blur(var(--blur-fundo));
+    z-index: 0;
+}
+
+.alinhar {
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: var(--font-log-btn);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.Pmaior{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.btn{
+    display: flex;
+    gap: 20px;
+}
+.btn button{
+    background-color: var(--verde);
+    border: 1px solid var(--verde);
+    color: var(--font-log-btn);
+    padding:5px;
+    width: 50px;
+    border-radius: 10px;
+}

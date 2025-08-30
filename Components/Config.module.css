@@ -1,0 +1,69 @@
+.radioTudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.btn{
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+.selected{
+    background: #06D6A0;
+    color: white;
+    border-radius: 8px;
+}
+
+.configGrid{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.slider{
+    width: 70%;
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #029a76;
+    width: 8px;
+    height: 22px;
+    border-radius: 3px;
+    margin-top: -8px;
+}
+
+.slider::-webkit-slider-runnable-track{
+    height: 6px;
+    background: #06D6A0;
+    cursor: pointer;
+}
+
+.link{
+    color: #333333;
+}
+
+.btn2{
+    background: #06D6A0;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 8px;
+}
+
+@media(max-width: 860px) {
+    .configGrid{
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider{
+        width: 90%;
+    }
+}

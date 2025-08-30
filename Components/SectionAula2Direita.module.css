@@ -1,0 +1,71 @@
+.divtudo{
+    width: 100%;
+}
+
+
+.divtitulo{
+    width: 70%;
+    height: 100px;
+    border-bottom: 3px solid #06D6A0;
+}
+
+.divbaixo{
+    gap: 150px;
+    height: 80vh;
+    width: 90vw;
+    overflow-y: auto;
+    display: block!important;
+}
+
+
+
+/* Firefox */
+.divbaixo{
+    scrollbar-width: thin;
+    scrollbar-color: #58E39F #DFE9EB;
+}
+
+/* Chrome, Edge and Safari */
+.divbaixo::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+.divbaixo::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+}
+
+.divbaixo::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+}
+
+.divbaixo::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+}
+
+.divbaixo::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #58E39F;
+}
+
+.divbaixo::-webkit-scrollbar-thumb:hover {
+    background-color: #58E39F;
+}
+
+.divbaixo::-webkit-scrollbar-thumb:active {
+    background-color: #58E39F;
+}
+
+
+.divbaixo .aula1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listacima{
+    padding-left: 15px;
+}
+
+

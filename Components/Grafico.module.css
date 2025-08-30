@@ -1,0 +1,102 @@
+.divgrafico{
+    height: 40vh;
+    position: relative;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.22);
+    border-radius: 20px;
+}
+.divnome{
+    font-weight: bolder;
+    font-size: 2em;
+    padding-left: 30px;
+}
+.divbarra{
+    background: #06D6A0;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-weight: bolder;
+    color: white;
+    width: 70px;
+    border-radius: 10px 10px 0px 0px;
+}
+.divbarras{
+    height: 100%;
+    padding-left: 15px;
+    display: flex;
+    align-items: flex-end;
+    gap: 2.5vw;
+}
+.graficoesquerda{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inverte{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.graficodireita{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.graficodireita h1{
+    color: #06D6A0;
+    font-size: 6em;
+    font-weight: bold;
+}
+.rosquinha{
+    display: none !important;
+}
+.graficodireita p{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+@media(max-width: 1370px){
+    .divbarras{
+        gap: 10px;
+    }
+    .divbarra{
+        width: 60px;
+    }
+}
+@media(max-width: 1300px){
+    .divbarra{
+        width: 50px;
+    }
+}
+@media(max-width: 1050px){
+    .rosquinha{
+        display: block !important;
+        height: 200px !important;
+        width: 200px !important;
+    }
+    .divnome{
+        font-size: 20px;
+        text-align: center;
+    }
+    .graficodireita h1{
+        font-size: 50px;
+    }
+    .graficodireita p{
+        font-size: 25px;
+    }
+    .inverte{
+        flex-direction: column;
+    }
+    .divbarras{
+        display: none;
+    }
+    .divgrafico{
+        height: fit-content;
+    }
+}

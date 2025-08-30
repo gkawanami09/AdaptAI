@@ -1,0 +1,20 @@
+.todo {
+    background-color: var(--verde);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color:var(--font-black);
+}
+
+.todo:hover{
+    cursor: pointer;
+
+    background-color: var(--font-log-btn);
+    color: var(--verde);
+
+    border: var(--verde) 1px solid;
+}

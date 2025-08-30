@@ -1,0 +1,56 @@
+.imgsIcon {
+    width: 1vw;
+    height: 1vw;
+}
+
+.btnIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw;
+    border: 2px var(--verde) solid;
+    border-radius: 100vw;
+    background: transparent;
+}
+
+.btnIconApagado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw;
+    border: 2px var(--apagado) solid;
+    border-radius: 100vw;
+    background: transparent;
+}
+
+.bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.percorrido {
+    background-color: var(--verde);
+    height: 0.5vw;
+}
+
+.nonpercorrido {
+    background-color: var(--apagado);
+    height: 0.5vw;
+}
+
+.fluido {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0 30px;
+
+    margin-top: 20px;
+}

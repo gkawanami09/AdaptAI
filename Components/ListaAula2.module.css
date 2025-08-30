@@ -1,0 +1,9 @@
+.divlista{
+    gap: 10px;
+}
+
+.divlista{
+    justify-content: center;
+    width: 45vw;
+    padding-left: 15px;
+}

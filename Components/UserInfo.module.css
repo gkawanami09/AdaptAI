@@ -1,0 +1,51 @@
+.grid{
+    display: flex;
+}
+
+.foto{
+    width: 50%;
+}
+
+.infoGrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.under{
+    width: 200%;
+    border: 2px solid #029a76;
+    border-radius: 12px;
+    margin: 0 !important;
+}
+
+.titulo{
+    font-weight: bold;
+}
+
+.edit{
+    animation: none !important;
+    color: #9b9b9b;
+}
+
+.link{
+    cursor: pointer;
+}
+
+.cinza{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(126, 126, 126, 0.54);
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 430px) {
+    .under{
+        width: 100%;
+    }
+    .grid{
+        justify-content: center;
+        align-items: center;
+    }
+}

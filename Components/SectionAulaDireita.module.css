@@ -1,0 +1,21 @@
+.divtudo{
+    width: 100%;
+    overflow-y: auto;
+}
+.divtitulo{
+    width: 75%;
+    height: 100px;
+    border-bottom: 3px solid #06D6A0;
+}
+.divbaixo{
+    justify-content: space-evenly;
+    width: 100%;
+}
+@media(max-width: 836px){
+    .divbaixo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}

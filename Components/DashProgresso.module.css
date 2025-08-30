@@ -1,0 +1,36 @@
+.divgrafico{
+    box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.22);
+    width: 20%;
+    height: 40vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.divinterior{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+.tituloProgresso{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+@media(max-width: 1370px){
+    .tituloProgresso{
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+}
+@media(max-width: 1050px){
+    .divgrafico{
+        width: 65%;
+    }
+}

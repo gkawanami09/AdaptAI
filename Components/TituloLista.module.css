@@ -1,0 +1,20 @@
+.titulolist{
+    height: 50px;
+    width: 350px;
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    background-color: #06D6A0;
+    color: white;
+    border-radius: 10px;
+}
+p{
+    margin: 0;
+    margin-left: 5px;
+}
+@media(max-width: 836px){
+    .titulolist{
+        width: 200px;
+    }
+}

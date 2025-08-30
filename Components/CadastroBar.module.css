@@ -1,0 +1,29 @@
+.todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 24vh;
+}
+
+.mess {
+    width: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    height: 2vh;
+    width: 24vh;
+    background-color: var(--charge-Fundo);
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.couter {
+    margin: 0 0;
+    height: 100%;
+    border-radius: 10px;
+}

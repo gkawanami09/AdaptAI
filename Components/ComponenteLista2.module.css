@@ -1,0 +1,27 @@
+.fazer{
+    height: 50px;
+    width: 85vw;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    align-items: center;
+    border: 2px solid #06D6A0;
+    border-radius: 10px;
+}
+p{
+    margin: 0;
+    margin-left: 5px;
+}
+.buttonlista{
+    background-color: #06D6A0;
+    border: none;
+    outline: none;
+    font-weight: bolder;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+.buttonlista:hover{
+    color: white;
+    background-color: #029a76;
+}
